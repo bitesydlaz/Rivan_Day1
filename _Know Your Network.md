@@ -1847,15 +1847,15 @@ Protect Remote Access
 ~~~
 !@EDGE
 conf t
- line ____  __
-  ____  ____
-  ____
-  ____  __  __
+ line con 0
+  password pass
+  login
+  exec-timeout 30 30
   exit
- line ____  __
-  ____  ____
-  ____
-  ____  __  __
+ line vty 0 14
+  password pass
+  login
+  exec-timeout 0 14
   end
 ~~~
 
@@ -1898,12 +1898,12 @@ conf t
 
 ### ⚙️ Configure routing protocols
 What are the jobs of a router?
- 1. &nbsp;
- 2. &nbsp;
- 3. &nbsp;
- 4. &nbsp;
- 5. &nbsp;
- 6. &nbsp;
+ 1. &nbsp;routing via static
+ 2. &nbsp;routing via default route
+ 3. &nbsp;routing via eigrp
+ 4. &nbsp;routing via ospf
+ 5. &nbsp;routing via bgp
+ 6. &nbsp;vpn
 
 <br>
 <br>
